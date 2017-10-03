@@ -1,6 +1,7 @@
 # Lazy load pyenv
 if type pyenv &> /dev/null; then
-    export PATH="${HOME}/.pyenv/shims:${PATH}"
+    local PYENV_SHIMS="${PYENV_ROOT:-${HOME}/.pyenv}/shims"
+    export PATH="${PYENV_SHIMS}:${PATH}"
     function pyenv() {
         unset pyenv
         eval "$(command pyenv init -)"
