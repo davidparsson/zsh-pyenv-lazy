@@ -10,6 +10,9 @@ if type pyenv > /dev/null; then
     function pyenv() {
         unset -f pyenv
         eval "$(command pyenv init -)"
+        if "$ZSH_PYENV_LAZY_VIRTUALENV"; then
+            eval "$(command pyenv virtualenv-init -)"
+        fi
         pyenv $@
     }
 fi
