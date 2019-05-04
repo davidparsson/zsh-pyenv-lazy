@@ -7,6 +7,14 @@ If `ZSH_PYENV_LAZY_VIRTUALENV` is set to `true`, also call `eval "$(pyenv virtua
 
 ## Installation
 
+### zgen
+
+Update your `~/.zshrc` with the following line:
+
+```sh
+zgen load davidparsson/zsh-pyenv-lazy
+```
+
 ### oh-my-zsh
 
 ```sh
@@ -21,3 +29,4 @@ If your theme calls out to `pyenv` when constructing the prompt
 (e.g. using the `pyenv` element in powerlevel9k),
 pyenv will still be loaded immediately.
 
+`
