@@ -13,9 +13,7 @@ If `ZSH_PYENV_LAZY_VIRTUALENV` is set to `true`, also call `eval "$(pyenv virtua
 git clone https://github.com/davidparsson/zsh-pyenv-lazy.git ~/.oh-my-zsh/custom/plugins/pyenv-lazy
 ```
 
-## Usage
-
-In your `~/.zshrc`, add `pyenv-lazy` to your `plugins` variable.
+Then, in your `~/.zshrc`, add `pyenv-lazy` to your `plugins` variable.
 
 ## N.B.
 
