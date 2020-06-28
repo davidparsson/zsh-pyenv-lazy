@@ -1,9 +1,12 @@
 # zsh-pyenv-lazy
 
-A zsh plugin for lazy loading of pyenv.
+A zsh plugin for installing and lazy loading of pyenv.
+
+`pyenv` will be installed if `$HOME/.pyenv` do not exist.
+
 The initial `eval "$(pyenv init -)"` is executed the first time `pyenv` is called.
 
-If `ZSH_PYENV_LAZY_VIRTUALENV` is set to `true`, also call `eval "$(pyenv virtualenv-init -)"`.
+If `ZSH_PYENV_LAZY_VIRTUALENV` is set to `true`, also install `pyenv-virtualenv` and call `eval "$(pyenv virtualenv-init -)"`.
 
 ## Installation
 
