@@ -28,5 +28,3 @@ Then, in your `~/.zshrc`, add `pyenv-lazy` to your `plugins` variable.
 If your theme calls out to `pyenv` when constructing the prompt
 (e.g. using the `pyenv` element in powerlevel9k),
 pyenv will still be loaded immediately.
-
-`
