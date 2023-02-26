@@ -6,7 +6,9 @@ fi
 
 # Lazy load pyenv
 if type pyenv > /dev/null; then
-    export PATH="${PYENV_ROOT}/bin:${PYENV_ROOT}/shims:${PATH}"
+    if [[ ! -n "${VIRTUAL_ENV}" ]]; then
+        export PATH="${PYENV_ROOT}/bin:${PYENV_ROOT}/shims:${PATH}"
+    fi
     function pyenv() {
         unset -f pyenv
         eval "$(command pyenv init -)"
